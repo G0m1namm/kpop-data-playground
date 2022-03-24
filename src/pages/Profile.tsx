@@ -70,11 +70,12 @@ const Profile = ({ artist }: ProfileProps) => {
 			let clamp = gsap.utils.clamp(-20, 20);
         
 			scrollTimeline.add(gsap.to(gallery, {
-					x: () => -totalScroll,
-					ease: "none",
-					scrollTrigger: {
+				x: () => -totalScroll,
+				ease: "none",
+				scrollTrigger: {
 					id: sectionId,
 					trigger: gallery,
+					toggleActions: "play complete none pause",
 					pin: true,
 					scrub: 1.2,
 					start: "center center",
@@ -93,8 +94,9 @@ const Profile = ({ artist }: ProfileProps) => {
 								})
 							}
 						}
-				}
-			}))
+					}
+			}
+			))
 
 			ScrollTrigger.refresh();
     }

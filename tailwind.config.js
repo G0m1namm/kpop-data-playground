@@ -18,6 +18,8 @@ module.exports = {
       '3xl': ['48px', { lineHeight: '60px' }],
       '4xl': ['56px', { lineHeight: '64px' }],
       '5xl': ['64px', { lineHeight: '80px' }],
+      '6xl': ['5vw', { lineHeight: '120%' }],
+      '7xl': ['10vw', { lineHeight: '120%' }],
     }
   },
   plugins: [],

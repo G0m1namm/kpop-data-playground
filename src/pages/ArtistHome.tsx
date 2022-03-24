@@ -51,7 +51,7 @@ export default function ArtistHome() {
           </motion.div>}
         {data && <motion.div
           key="content-section"
-          className="pt-[136px] px-16 2xl:px-20"
+          className="pt-[136px] px-4 md:px-16 2xl:px-20"
           initial={{opacity: 0}}
           animate={{opacity: 1}}
         >
